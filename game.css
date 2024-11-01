@@ -10,9 +10,9 @@ body{
 .main{
     border: 1px solid black;
     width: 47.5vw;
-    height: 95vh;
+    height: 97vh;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #705C53;
     color: #B7B7B7;
     border-radius: 10px;
@@ -30,9 +30,11 @@ body{
 .area{
     width: 47.5vw;
     height: 46vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    padding-left:20px;
 }
 .box{
     position:relative ;
@@ -82,7 +84,7 @@ body{
     height: 100px;
     position: absolute;
     top: 50%;
-    left: 42%;
+    left: 39%;
     font-size: 3em;
     text-align: center;
     padding-top: 25px;
@@ -119,7 +121,7 @@ body{
     position: absolute;
     font-size: 6em;
     top: 35%;
-    left: 35%;
+    left: 34%;
     transition: all 1s ease;
 }
 .final{
@@ -129,20 +131,22 @@ body{
     position: absolute;
     font-size: 3em;
     top: 60%;
-    left: 35%;
+    left: 33%;
 }
 @media(max-width: 426px){
     .main{
+        margin: 0;
         width: 100vw;
-        height: 83vh;
+        height: 90vh;
     }
     .update{
         width: 99vw;
-        height: 7vh;
+        height: 5vh;
     }
     .area{
         width: 99vw;
         height: 80vh;
+        gap: 0px;
     }
     .box{
         width: 20vw;
@@ -160,6 +164,7 @@ body{
         left: 20%;
     }
     .stop{
-        top: 90%;
+        top: 92%;
+        left: 5%;
     }
 }
